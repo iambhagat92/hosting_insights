@@ -1,0 +1,17 @@
+# robots.txt for Best Hosting Review
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://hostinginsights.vercel.app/sitemap.xml

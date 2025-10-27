@@ -15,9 +15,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Best Hosting Review - Compare Top Web Hosting Services",
-  description: "Comprehensive guide comparing top web hosting providers. Find the best hosting for your website.",
-  keywords: "web hosting review, best web hosting, hosting comparison, Bluehost, SiteGround, A2 Hosting",
+  title: "Best Hosting Review - Compare Top Web Hosting Services 2025",
+  description: "Comprehensive guide comparing top web hosting providers. Find the best hosting for your website with detailed reviews of Bluehost, SiteGround, A2 Hosting, and more.",
+  keywords: "web hosting review, best web hosting, hosting comparison, Bluehost, SiteGround, A2 Hosting, cheap hosting, best web host 2025",
+  robots: "index, follow",
+  viewport: "width=device-width, initial-scale=1.0",
+  openGraph: {
+    type: "website",
+    url: "https://hostinginsights.vercel.app",
+    title: "Best Hosting Review - Compare Top Web Hosting Services 2025",
+    description: "Honest reviews of the best web hosting providers. Compare features, pricing, and performance.",
+    images: [
+      {
+        url: "https://hostinginsights.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Best Hosting Review",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Hosting Review - Compare Top Web Hosting Services 2025",
+    description: "Honest reviews of the best web hosting providers.",
+    images: ["https://hostinginsights.vercel.app/og-image.png"],
+  },
+  alternates: {
+    canonical: "https://hostinginsights.vercel.app",
+  },
 };
 
 export default function RootLayout({
