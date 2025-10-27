@@ -5,6 +5,7 @@ import { useState } from "react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 bg-gradient-to-r from-blue-600 to-blue-800 text-white shadow-lg">
@@ -15,22 +16,35 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-6 text-sm">
+          <nav className="hidden md:flex space-x-6 text-sm items-center">
             <Link href="/" className="hover:text-blue-200 transition">
               Home
             </Link>
             <Link href="/blog/hosting-comparison" className="hover:text-blue-200 transition">
               Comparison
             </Link>
-            <Link href="/blog/bluehost-review" className="hover:text-blue-200 transition">
-              Bluehost
-            </Link>
-            <Link href="/blog/siteground-review" className="hover:text-blue-200 transition">
-              SiteGround
-            </Link>
-            <Link href="/blog/a2-hosting-review" className="hover:text-blue-200 transition">
-              A2 Hosting
-            </Link>
+            
+            {/* Best Reviews Dropdown */}
+            <div className="relative group">
+              <button className="flex items-center gap-1 hover:text-blue-200 transition py-2">
+                Best Reviews
+                <svg className="w-4 h-4 group-hover:rotate-180 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+              </button>
+              <div className="absolute left-0 mt-0 w-48 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <Link href="/blog/bluehost-review" className="block px-4 py-2 hover:bg-blue-100 first:rounded-t-lg">
+                  ⭐ Bluehost Review
+                </Link>
+                <Link href="/blog/siteground-review" className="block px-4 py-2 hover:bg-blue-100">
+                  ⚡ SiteGround Review
+                </Link>
+                <Link href="/blog/a2-hosting-review" className="block px-4 py-2 hover:bg-blue-100 last:rounded-b-lg">
+                  🚀 A2 Hosting Review
+                </Link>
+              </div>
+            </div>
+            
             <Link href="/contact" className="hover:text-blue-200 transition">
               Contact
             </Link>
