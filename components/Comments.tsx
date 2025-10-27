@@ -12,24 +12,7 @@ interface Comment {
 }
 
 export default function Comments({ reviewName }: { reviewName: string }) {
-  const [comments, setComments] = useState<Comment[]>([
-    {
-      id: "1",
-      name: "John Smith",
-      email: "john@example.com",
-      message: "Great review! Very helpful in making my decision.",
-      date: "2024-10-25",
-      rating: 5,
-    },
-    {
-      id: "2",
-      name: "Sarah Johnson",
-      email: "sarah@example.com",
-      message: "Thanks for the detailed comparison. I went with this provider based on your recommendation.",
-      date: "2024-10-24",
-      rating: 5,
-    },
-  ]);
+  const [comments, setComments] = useState<Comment[]>([]);
 
   const [formData, setFormData] = useState({
     name: "",
