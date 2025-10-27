@@ -77,6 +77,8 @@ export default function DreamHostReview() {
       </div>
 
       <Comments reviewName="DreamHost" />
+
+      <RelatedReviews currentReview="DreamHost" />
     </article>
   );
 }

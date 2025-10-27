@@ -119,6 +119,8 @@ export default function InterServerReview() {
       </div>
 
       <Comments reviewName="InterServer" />
+
+      <RelatedReviews currentReview="InterServer" />
     </article>
   );
 }

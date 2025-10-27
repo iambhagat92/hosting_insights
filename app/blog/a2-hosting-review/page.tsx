@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
+import RelatedReviews from "@/components/RelatedReviews";
 
 export const metadata = {
   title: "A2 Hosting Review 2024: Best Value for Speed & Developers? Full Analysis",
@@ -373,6 +374,8 @@ export default function A2HostingReview() {
       </section>
 
       <Comments reviewName="A2 Hosting" />
+
+      <RelatedReviews currentReview="A2 Hosting" />
     </article>
   );
 }

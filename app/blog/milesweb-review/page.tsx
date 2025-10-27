@@ -87,6 +87,8 @@ export default function MilesWebReview() {
       </div>
 
       <Comments reviewName="MilesWeb" />
+
+      <RelatedReviews currentReview="MilesWeb" />
     </article>
   );
 }

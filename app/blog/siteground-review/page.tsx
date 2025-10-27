@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
+import RelatedReviews from "@/components/RelatedReviews";
 
 export const metadata = {
   title: "SiteGround Review 2024: Best Performance Hosting? Complete Analysis",
@@ -341,6 +342,8 @@ export default function SiteGroundReview() {
       </section>
 
       <Comments reviewName="SiteGround" />
+
+      <RelatedReviews currentReview="SiteGround" />
     </article>
   );
 }

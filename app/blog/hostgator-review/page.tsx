@@ -87,6 +87,8 @@ export default function HostGatorReview() {
       </div>
 
       <Comments reviewName="HostGator" />
+
+      <RelatedReviews currentReview="HostGator" />
     </article>
   );
 }

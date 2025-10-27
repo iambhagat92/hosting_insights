@@ -87,6 +87,8 @@ export default function NamecheapReview() {
       </div>
 
       <Comments reviewName="Namecheap" />
+
+      <RelatedReviews currentReview="Namecheap" />
     </article>
   );
 }
