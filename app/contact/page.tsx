@@ -46,28 +46,6 @@ export default function ContactPage() {
                 contact@besthosting.review
               </a>
             </div>
-
-            <div>
-              <h3 className="font-bold text-lg mb-2">Response Time</h3>
-              <p className="text-gray-700">
-                We typically respond to emails within 24 hours during business days.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-bold text-lg mb-2">Follow Us</h3>
-              <div className="flex space-x-4">
-                <a href="#" className="text-blue-600 hover:underline">
-                  Twitter
-                </a>
-                <a href="#" className="text-blue-600 hover:underline">
-                  Facebook
-                </a>
-                <a href="#" className="text-blue-600 hover:underline">
-                  LinkedIn
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
