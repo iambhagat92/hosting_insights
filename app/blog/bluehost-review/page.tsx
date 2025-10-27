@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "Bluehost Review 2024: Is It Worth It? Complete Guide & Pricing",
@@ -8,7 +9,13 @@ export const metadata = {
   keywords: "Bluehost review, Bluehost hosting, Bluehost vs others, Bluehost pricing, WordPress hosting",
 };
 
-export default function BluehostReview() {
+export default function BlueHostReview() {
+  const speedData = hostingInfographics.speedMetrics(
+    "Bluehost",
+    "1.5-2.5 seconds"
+  );
+  const reliabilityData = hostingInfographics.reliabilityMetrics("Bluehost");
+
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* TOC */}
@@ -301,6 +308,20 @@ export default function BluehostReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> Bluehost support is generally helpful and responsive, though quality can vary. For WordPress-specific issues, they're particularly knowledgeable.
         </p>
+      </section>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">Bluehost at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "Bluehost",
+            "1.5-2.5 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("Bluehost")}
+        />
       </section>
 
       {/* Use Cases */}
