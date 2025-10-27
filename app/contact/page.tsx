@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import React, { FormEvent, useState } from "react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,13 +18,39 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState("");
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setTimeout(() => setSubmitted(false), 5000);
+    setLoading(true);
+    setError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send email");
+      }
+
+      setSubmitted(true);
+      setFormData({ name: "", email: "", subject: "", message: "" });
+      setTimeout(() => setSubmitted(false), 5000);
+    } catch (err) {
+      setError(
+        err instanceof Error
+          ? err.message
+          : "Failed to send message. Please try again."
+      );
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -55,7 +81,13 @@ export default function ContactPage() {
 
           {submitted && (
             <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6">
-              Thank you! Your message has been sent successfully.
+              Thank you! Your message has been sent successfully. We'll get back to you soon!
+            </div>
+          )}
+
+          {error && (
+            <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6">
+              {error}
             </div>
           )}
 
@@ -122,9 +154,10 @@ export default function ContactPage() {
 
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition"
+              disabled={loading}
+              className="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-blue-700 transition disabled:bg-gray-400 disabled:cursor-not-allowed"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </form>
         </div>
