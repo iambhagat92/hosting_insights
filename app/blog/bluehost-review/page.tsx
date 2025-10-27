@@ -4,7 +4,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
-  title: "Bluehost Review 2024: Is It Worth It? Complete Guide & Pricing",
+  title: "Bluehost Review 2025: Is It Worth It? Complete Guide & Pricing",
   description: "In-depth Bluehost review covering features, pros, cons, pricing, performance, and whether it's the best WordPress hosting. Read our honest expert analysis.",
   keywords: "Bluehost review, Bluehost hosting, Bluehost vs others, Bluehost pricing, WordPress hosting",
 };
@@ -36,7 +36,7 @@ export default function BlueHostReview() {
 
       {/* Introduction */}
       <section id="intro" className="mb-12">
-        <h1 className="text-5xl font-bold mb-6">Bluehost Review 2024: Complete Guide to WordPress Hosting</h1>
+        <h1 className="text-5xl font-bold mb-6">Bluehost Review 2025: Complete Guide to WordPress Hosting</h1>
         <p className="text-lg text-gray-700 mb-4">
           Bluehost is one of the most popular web hosting providers on the market, particularly known for WordPress hosting. With over 2 million websites hosted, Bluehost has become a trusted name in the industry. But is it the right choice for you?
         </p>
@@ -143,6 +143,20 @@ export default function BlueHostReview() {
         <p className="text-gray-700 mb-6">
           Bluehost includes regular backups of your website, with options to restore from different points in time if needed.
         </p>
+      </section>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">Bluehost at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "Bluehost",
+            "1.5-2.5 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("Bluehost")}
+        />
       </section>
 
       {/* Performance */}
@@ -308,20 +322,6 @@ export default function BlueHostReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> Bluehost support is generally helpful and responsive, though quality can vary. For WordPress-specific issues, they're particularly knowledgeable.
         </p>
-      </section>
-
-      {/* Infographics */}
-      <section className="mb-12 pb-8 border-b">
-        <h2 className="text-3xl font-bold mb-6">Bluehost at a Glance</h2>
-        <Infographic
-          data={hostingInfographics.speedMetrics(
-            "Bluehost",
-            "1.5-2.5 seconds"
-          )}
-        />
-        <Infographic
-          data={hostingInfographics.reliabilityMetrics("Bluehost")}
-        />
       </section>
 
       {/* Use Cases */}

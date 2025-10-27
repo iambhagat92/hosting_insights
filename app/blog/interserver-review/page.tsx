@@ -4,7 +4,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
-  title: "InterServer Review 2024: Affordable Hosting with Lifetime Discounts",
+  title: "InterServer Review 2025: Affordable Hosting with Lifetime Discounts",
   description: "Complete InterServer review - pricing, features, speed, support. Is InterServer's lifetime discounted pricing worth it?",
   keywords: "InterServer review, InterServer hosting, lifetime discount hosting",
 };
@@ -24,7 +24,7 @@ export default function InterServerReview() {
         </ul>
       </div>
 
-      <h1 className="text-5xl font-bold mb-6">InterServer Review 2024: Lifetime Discount Hosting</h1>
+      <h1 className="text-5xl font-bold mb-6">InterServer Review 2025: Lifetime Discount Hosting</h1>
 
       <section id="overview" className="mb-12 pb-8 border-b">
         <h2 className="text-3xl font-bold mb-4">What is InterServer?</h2>

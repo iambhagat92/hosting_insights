@@ -4,7 +4,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
-  title: "SiteGround Review 2024: Best Performance Hosting? Complete Analysis",
+  title: "SiteGround Review 2025: Best Performance Hosting? Complete Analysis",
   description: "In-depth SiteGround review covering pricing, features, speed, uptime, customer support, and performance benchmarks. Is SiteGround worth the premium price?",
   keywords: "SiteGround review, SiteGround hosting, best hosting for speed, SiteGround pricing, premium web hosting",
 };
@@ -31,7 +31,7 @@ export default function SiteGroundReview() {
 
       {/* Introduction */}
       <section id="intro" className="mb-12">
-        <h1 className="text-5xl font-bold mb-6">SiteGround Review 2024: Premium Hosting Worth the Price?</h1>
+        <h1 className="text-5xl font-bold mb-6">SiteGround Review 2025: Premium Hosting Worth the Price?</h1>
         <p className="text-lg text-gray-700 mb-4">
           SiteGround is consistently ranked among the best web hosting providers globally. Known for exceptional performance, reliability, and customer support, SiteGround is the premium choice for those who prioritize speed and uptime over budget.
         </p>
@@ -141,6 +141,20 @@ export default function SiteGroundReview() {
         <p className="text-gray-700 mb-6">
           Moving from another host? SiteGround offers free migration assistance, handling the technical details while you keep your site running.
         </p>
+      </section>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">SiteGround at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "SiteGround",
+            "0.8-1.2 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("SiteGround")}
+        />
       </section>
 
       {/* Performance */}
@@ -299,20 +313,6 @@ export default function SiteGroundReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> SiteGround's support is exceptional. They don't just answer questions; they educate customers and genuinely care about solving issues.
         </p>
-      </section>
-
-      {/* Infographics */}
-      <section className="mb-12 pb-8 border-b">
-        <h2 className="text-3xl font-bold mb-6">SiteGround at a Glance</h2>
-        <Infographic
-          data={hostingInfographics.speedMetrics(
-            "SiteGround",
-            "0.8-1.2 seconds"
-          )}
-        />
-        <Infographic
-          data={hostingInfographics.reliabilityMetrics("SiteGround")}
-        />
       </section>
 
       {/* Use Cases */}

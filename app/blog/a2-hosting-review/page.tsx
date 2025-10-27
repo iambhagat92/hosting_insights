@@ -4,7 +4,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
-  title: "A2 Hosting Review 2024: Best Value for Speed & Developers? Full Analysis",
+  title: "A2 Hosting Review 2025: Best Value for Speed & Developers? Full Analysis",
   description: "Complete A2 Hosting review covering Turbo servers, pricing, speed benchmarks, developer features, pros & cons. Is A2 Hosting worth it for your website?",
   keywords: "A2 Hosting review, A2 Hosting Turbo, developer hosting, affordable fast hosting, A2 Hosting pricing",
 };
@@ -32,7 +32,7 @@ export default function A2HostingReview() {
 
       {/* Introduction */}
       <section id="intro" className="mb-12">
-        <h1 className="text-5xl font-bold mb-6">A2 Hosting Review 2024: Best Value for Speed?</h1>
+        <h1 className="text-5xl font-bold mb-6">A2 Hosting Review 2025: Best Value for Speed?</h1>
         <p className="text-lg text-gray-700 mb-4">
           A2 Hosting has built a reputation as a developer-friendly hosting provider that doesn't break the bank. Known for their Turbo servers, unlimited resources, and anytime money-back guarantee, A2 Hosting appeals to developers, growing businesses, and cost-conscious users alike.
         </p>
@@ -171,6 +171,20 @@ export default function A2HostingReview() {
         <p className="text-gray-700 mb-6">
           Regular automatic backups are included, with easy restore functionality available in cPanel.
         </p>
+      </section>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">A2 Hosting at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "A2 Hosting",
+            "0.9-1.3 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("A2 Hosting")}
+        />
       </section>
 
       {/* Performance */}
@@ -330,20 +344,6 @@ export default function A2HostingReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> A2's support is solid for technical issues but lacks the instant gratification of live chat. For developers, the documentation and resources are excellent.
         </p>
-      </section>
-
-      {/* Infographics */}
-      <section className="mb-12 pb-8 border-b">
-        <h2 className="text-3xl font-bold mb-6">A2 Hosting at a Glance</h2>
-        <Infographic
-          data={hostingInfographics.speedMetrics(
-            "A2 Hosting",
-            "0.9-1.3 seconds"
-          )}
-        />
-        <Infographic
-          data={hostingInfographics.reliabilityMetrics("A2 Hosting")}
-        />
       </section>
 
       {/* Use Cases */}
