@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "DreamHost Review 2024: Open-Source Hosting with 97-Day Money Back",
@@ -76,6 +77,20 @@ export default function DreamHostReview() {
           🚀 Get DreamHost Hosting Now
         </a>
       </div>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">DreamHost at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "DreamHost",
+            "1.2-1.8 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("DreamHost")}
+        />
+      </section>
 
       <Comments reviewName="DreamHost" />
 

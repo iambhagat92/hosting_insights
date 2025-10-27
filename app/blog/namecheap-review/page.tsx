@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "Namecheap Review 2024: Budget Hosting with Free Domain",
@@ -87,6 +88,20 @@ export default function NamecheapReview() {
           🚀 Get Namecheap Now
         </a>
       </div>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">Namecheap at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "Namecheap",
+            "1.6-2.1 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("Namecheap")}
+        />
+      </section>
 
       <Comments reviewName="Namecheap" />
 

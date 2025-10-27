@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "A2 Hosting Review 2024: Best Value for Speed & Developers? Full Analysis",
@@ -329,6 +330,20 @@ export default function A2HostingReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> A2's support is solid for technical issues but lacks the instant gratification of live chat. For developers, the documentation and resources are excellent.
         </p>
+      </section>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">A2 Hosting at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "A2 Hosting",
+            "0.9-1.3 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("A2 Hosting")}
+        />
       </section>
 
       {/* Use Cases */}

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "HostGator Review 2024: Budget Hosting with Great Support",
@@ -87,6 +88,20 @@ export default function HostGatorReview() {
           🚀 Get HostGator Now
         </a>
       </div>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">HostGator at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "HostGator",
+            "1.8-2.3 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("HostGator")}
+        />
+      </section>
 
       <Comments reviewName="HostGator" />
 

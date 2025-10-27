@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "MilesWeb Review 2024: Affordable Hosting with Good Speed",
@@ -87,6 +88,20 @@ export default function MilesWebReview() {
           🚀 Get MilesWeb Now
         </a>
       </div>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">MilesWeb at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "MilesWeb",
+            "1.3-1.7 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("MilesWeb")}
+        />
+      </section>
 
       <Comments reviewName="MilesWeb" />
 

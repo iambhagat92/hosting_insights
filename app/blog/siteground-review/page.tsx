@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "SiteGround Review 2024: Best Performance Hosting? Complete Analysis",
@@ -298,6 +299,20 @@ export default function SiteGroundReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> SiteGround's support is exceptional. They don't just answer questions; they educate customers and genuinely care about solving issues.
         </p>
+      </section>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">SiteGround at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "SiteGround",
+            "0.8-1.2 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("SiteGround")}
+        />
       </section>
 
       {/* Use Cases */}

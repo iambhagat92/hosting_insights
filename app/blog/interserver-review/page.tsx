@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
+import Infographic, { hostingInfographics } from "@/components/Infographic";
 
 export const metadata = {
   title: "InterServer Review 2024: Affordable Hosting with Lifetime Discounts",
@@ -118,6 +119,20 @@ export default function InterServerReview() {
           🚀 Get InterServer Hosting Now
         </a>
       </div>
+
+      {/* Infographics */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-6">InterServer at a Glance</h2>
+        <Infographic
+          data={hostingInfographics.speedMetrics(
+            "InterServer",
+            "1.4-1.9 seconds"
+          )}
+        />
+        <Infographic
+          data={hostingInfographics.reliabilityMetrics("InterServer")}
+        />
+      </section>
 
       <Comments reviewName="InterServer" />
 
