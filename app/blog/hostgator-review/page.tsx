@@ -3,6 +3,29 @@ import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "WebApplication",
+    "name": "HostGator",
+    "url": "https://www.hostgator.com",
+    "applicationCategory": "WebHostingService"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.2",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Best Hosting Review"
+  },
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-10-27"
+};
+
 export const metadata = {
   title: "HostGator Review 2025: Budget Hosting with Great Support",
   description: "HostGator review - affordable hosting with excellent customer support. Best budget option.",
@@ -11,7 +34,12 @@ export const metadata = {
 
 export default function HostGatorReview() {
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* TOC */}
       <div className="bg-blue-50 p-6 rounded-lg mb-8">
         <h2 className="font-bold text-lg mb-4">Table of Contents</h2>
@@ -158,6 +186,7 @@ export default function HostGatorReview() {
       <Comments reviewName="HostGator" />
 
       <RelatedReviews currentReview="HostGator" />
-    </article>
+      </article>
+    </>
   );
 }

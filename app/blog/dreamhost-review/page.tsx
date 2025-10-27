@@ -3,6 +3,29 @@ import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "WebApplication",
+    "name": "DreamHost",
+    "url": "https://www.dreamhost.com",
+    "applicationCategory": "WebHostingService"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "4.4",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Best Hosting Review"
+  },
+  "datePublished": "2025-01-01",
+  "dateModified": "2025-10-27"
+};
+
 export const metadata = {
   title: "DreamHost Review 2025: Open-Source Hosting with 97-Day Money Back",
   description: "DreamHost review - affordable hosting with 97-day guarantee. Best for open-source projects and developers.",
@@ -11,7 +34,12 @@ export const metadata = {
 
 export default function DreamHostReview() {
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-5xl font-bold mb-6">DreamHost Review 2025: Developer-Friendly Hosting</h1>
 
       <section className="mb-12 pb-8 border-b">
@@ -112,6 +140,7 @@ export default function DreamHostReview() {
       <Comments reviewName="DreamHost" />
 
       <RelatedReviews currentReview="DreamHost" />
-    </article>
+      </article>
+    </>
   );
 }

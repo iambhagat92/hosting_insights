@@ -45,6 +45,27 @@ export const metadata: Metadata = {
   },
 };
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Best Hosting Review",
+  "description": "Comprehensive guide comparing top web hosting providers. Find the best hosting for your website.",
+  "url": "https://hostinginsights.vercel.app",
+  "logo": "https://hostinginsights.vercel.app/logo.png",
+  "sameAs": [
+    "https://twitter.com/besthosting",
+    "https://www.facebook.com/besthosting",
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://hostinginsights.vercel.app/blog/hosting-comparison",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,6 +73,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
