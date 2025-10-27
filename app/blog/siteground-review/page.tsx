@@ -23,6 +23,7 @@ export default function SiteGroundReview() {
           <li><Link href="#pros" className="text-blue-600 hover:underline">Pros</Link></li>
           <li><Link href="#cons" className="text-blue-600 hover:underline">Cons</Link></li>
           <li><Link href="#support" className="text-blue-600 hover:underline">Customer Support</Link></li>
+          <li><Link href="#usecases" className="text-blue-600 hover:underline">Use Cases</Link></li>
           <li><Link href="#verdict" className="text-blue-600 hover:underline">Final Verdict</Link></li>
         </ul>
       </div>
@@ -297,6 +298,71 @@ export default function SiteGroundReview() {
         <p className="text-gray-700">
           <strong>Overall Assessment:</strong> SiteGround's support is exceptional. They don't just answer questions; they educate customers and genuinely care about solving issues.
         </p>
+      </section>
+
+      {/* Use Cases */}
+      <section id="usecases" className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">Ideal Use Cases for SiteGround</h2>
+        <div className="space-y-4">
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">💼 E-Commerce & Sales Sites</h3>
+            <p className="text-gray-700">Perfect for online stores where every millisecond of speed impacts conversion rates. 99.99% uptime means zero lost sales to downtime.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">🏢 Corporate & Professional Sites</h3>
+            <p className="text-gray-700">Ideal for law firms, medical practices, and consultants needing enterprise-grade reliability and security without enterprise pricing.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">📰 News & Media Sites</h3>
+            <p className="text-gray-700">High-traffic publisher sites need speed and uptime. SiteGround's CDN-ready infrastructure handles traffic spikes effortlessly.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">🎨 Creative Agency Portfolios</h3>
+            <p className="text-gray-700">Agency websites need to showcase client work at lightning speed. SiteGround's performance impresses clients and helps land new business.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">🌍 International Businesses</h3>
+            <p className="text-gray-700">Global data centers mean your site loads fast for customers anywhere in the world. Crucial for worldwide operations.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Price Comparison */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">5-Year Cost Analysis</h2>
+        <p className="text-gray-700 mb-4">Here's what you'll actually pay over 5 years with SiteGround:</p>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="bg-blue-600 text-white">
+                <th className="border p-3 text-left">Plan</th>
+                <th className="border p-3 text-left">Year 1</th>
+                <th className="border p-3 text-left">Years 2-5</th>
+                <th className="border p-3 text-left">Total 5 Years</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="hover:bg-gray-50">
+                <td className="border p-3 font-semibold">Startup ($2.99)</td>
+                <td className="border p-3">$35.88</td>
+                <td className="border p-3">$767.76/year</td>
+                <td className="border p-3">$3,407.76</td>
+              </tr>
+              <tr className="hover:bg-gray-50 bg-gray-50">
+                <td className="border p-3 font-semibold">GrowBig ($4.99)</td>
+                <td className="border p-3">$59.88</td>
+                <td className="border p-3">$1,151.76/year</td>
+                <td className="border p-3">$5,215.76</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="border p-3 font-semibold">GoGeek ($7.99)</td>
+                <td className="border p-3">$95.88</td>
+                <td className="border p-3">$1,739.76/year</td>
+                <td className="border p-3">$7,999.76</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       {/* Verdict */}

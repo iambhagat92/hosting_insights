@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Comments from "@/components/Comments";
+import RelatedReviews from "@/components/RelatedReviews";
 
 export const metadata = {
   title: "DreamHost Review 2024: Open-Source Hosting with 97-Day Money Back",

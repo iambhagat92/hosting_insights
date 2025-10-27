@@ -303,6 +303,67 @@ export default function BluehostReview() {
         </p>
       </section>
 
+      {/* Use Cases */}
+      <section id="usecases" className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">Ideal Use Cases for Bluehost</h2>
+        <div className="space-y-4">
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">📝 WordPress Bloggers</h3>
+            <p className="text-gray-700">Perfect for bloggers wanting to launch WordPress quickly with minimal setup. One-click installation + WordPress optimization makes this ideal.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">🏪 Small E-Commerce</h3>
+            <p className="text-gray-700">Great for small online stores using WooCommerce. Unlimited bandwidth handles typical shopping traffic well.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">💼 Business Websites</h3>
+            <p className="text-gray-700">Solid choice for small business sites that need reliable uptime and customer support without premium pricing.</p>
+          </div>
+          <div className="p-4 bg-blue-50 rounded-lg">
+            <h3 className="font-bold text-lg mb-2">🎓 Portfolio Sites</h3>
+            <p className="text-gray-700">Budget-friendly for designers, photographers, and freelancers building portfolio websites.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Price Comparison */}
+      <section className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">5-Year Cost Analysis</h2>
+        <p className="text-gray-700 mb-4">Here's what you'll actually pay over 5 years:</p>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="bg-blue-600 text-white">
+                <th className="border p-3 text-left">Plan</th>
+                <th className="border p-3 text-left">Year 1</th>
+                <th className="border p-3 text-left">Years 2-5</th>
+                <th className="border p-3 text-left">Total 5 Years</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="hover:bg-gray-50">
+                <td className="border p-3 font-semibold">Basic ($2.95)</td>
+                <td className="border p-3">$35.40</td>
+                <td className="border p-3">$431.76/year</td>
+                <td className="border p-3">$1,763.40</td>
+              </tr>
+              <tr className="hover:bg-gray-50 bg-gray-50">
+                <td className="border p-3 font-semibold">Plus ($5.95)</td>
+                <td className="border p-3">$71.40</td>
+                <td className="border p-3">$671.76/year</td>
+                <td className="border p-3">$2,758.40</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="border p-3 font-semibold">Pro ($13.95)</td>
+                <td className="border p-3">$167.40</td>
+                <td className="border p-3">$1,343.76/year</td>
+                <td className="border p-3">$5,542.40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       {/* Verdict */}
       <section id="verdict">
         <h2 className="text-3xl font-bold mb-4">Final Verdict: Is Bluehost Worth It?</h2>

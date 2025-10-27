@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Comments from "@/components/Comments";
+import RelatedReviews from "@/components/RelatedReviews";
 
 export const metadata = {
   title: "Namecheap Review 2024: Budget Hosting with Free Domain",
