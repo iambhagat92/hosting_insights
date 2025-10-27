@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Comments from "@/components/Comments";
 
 export const metadata = {
   title: "Bluehost Review 2024: Is It Worth It? Complete Guide & Pricing",
@@ -342,6 +343,8 @@ export default function BluehostReview() {
           </p>
         </div>
       </section>
+
+      <Comments reviewName="Bluehost" />
     </article>
   );
 }

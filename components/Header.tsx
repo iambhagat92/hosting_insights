@@ -32,15 +32,30 @@ export default function Header() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                 </svg>
               </button>
-              <div className="absolute left-0 mt-0 w-48 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-white text-gray-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 max-h-96 overflow-y-auto">
                 <Link href="/blog/bluehost-review" className="block px-4 py-2 hover:bg-blue-100 first:rounded-t-lg">
-                  ⭐ Bluehost Review
+                  ⭐ Bluehost
                 </Link>
                 <Link href="/blog/siteground-review" className="block px-4 py-2 hover:bg-blue-100">
-                  ⚡ SiteGround Review
+                  ⚡ SiteGround
                 </Link>
-                <Link href="/blog/a2-hosting-review" className="block px-4 py-2 hover:bg-blue-100 last:rounded-b-lg">
-                  🚀 A2 Hosting Review
+                <Link href="/blog/a2-hosting-review" className="block px-4 py-2 hover:bg-blue-100">
+                  🚀 A2 Hosting
+                </Link>
+                <Link href="/blog/interserver-review" className="block px-4 py-2 hover:bg-blue-100">
+                  💎 InterServer
+                </Link>
+                <Link href="/blog/dreamhost-review" className="block px-4 py-2 hover:bg-blue-100">
+                  🌙 DreamHost
+                </Link>
+                <Link href="/blog/hostgator-review" className="block px-4 py-2 hover:bg-blue-100">
+                  🐊 HostGator
+                </Link>
+                <Link href="/blog/namecheap-review" className="block px-4 py-2 hover:bg-blue-100">
+                  💰 Namecheap
+                </Link>
+                <Link href="/blog/milesweb-review" className="block px-4 py-2 hover:bg-blue-100 last:rounded-b-lg">
+                  🌐 MilesWeb
                 </Link>
               </div>
             </div>
