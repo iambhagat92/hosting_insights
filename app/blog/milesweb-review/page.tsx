@@ -155,6 +155,103 @@ export default function MilesWebReview() {
         </p>
       </section>
 
+      <section id="pros" className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">MilesWeb Pros: Why Choose MilesWeb?</h2>
+        <div className="space-y-4">
+          <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+            <h3 className="font-bold text-lg text-green-900 mb-2">💰 Very Affordable Pricing</h3>
+            <p className="text-gray-700">Starting at $1.99/month, MilesWeb offers budget-friendly pricing. Renewal prices ($5.99-$7.99) are also reasonable.</p>
+          </div>
+          <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+            <h3 className="font-bold text-lg text-green-900 mb-2">🇮🇳 India-Optimized</h3>
+            <p className="text-gray-700">Perfect for Indian websites. Local data centers, Hindi support, and Indian payment gateway optimization.</p>
+          </div>
+          <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+            <h3 className="font-bold text-lg text-green-900 mb-2">⚡ SSD Performance</h3>
+            <p className="text-gray-700">All plans include SSD storage with speeds 1.3-1.7 seconds. Better than most budget competitors.</p>
+          </div>
+          <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+            <h3 className="font-bold text-lg text-green-900 mb-2">📞 Good Support</h3>
+            <p className="text-gray-700">24/7 support with Hindi language option. Responsive to Indian customer needs and issues.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cons" className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">MilesWeb Cons: Potential Drawbacks</h2>
+        <div className="space-y-4">
+          <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+            <h3 className="font-bold text-lg text-red-900 mb-2">🌐 Limited Global Presence</h3>
+            <p className="text-gray-700">Primarily focused on Indian market. May not be ideal for global businesses or non-Indian users.</p>
+          </div>
+          <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+            <h3 className="font-bold text-lg text-red-900 mb-2">💾 Limited Storage (Basic Plan)</h3>
+            <p className="text-gray-700">Starter plan offers only 100GB. Media-heavy websites may need to upgrade to Professional plan.</p>
+          </div>
+          <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+            <h3 className="font-bold text-lg text-red-900 mb-2">📞 Support Quality Varies</h3>
+            <p className="text-gray-700">While responsive, support quality can sometimes be inconsistent. Response times vary based on issue complexity.</p>
+          </div>
+          <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
+            <h3 className="font-bold text-lg text-red-900 mb-2">🏆 Less Industry Recognition</h3>
+            <p className="text-gray-700">Not as well-known globally as Bluehost or SiteGround. Fewer third-party reviews and community discussions.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="support" className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">Customer Support Quality</h2>
+        <h3 className="text-2xl font-semibold mb-3">📞 24/7 Multi-Channel Support</h3>
+        <p className="text-gray-700 mb-6">Available via email, live chat, and ticketing system. Response times are generally good with average 2-4 hour turnaround.</p>
+        <h3 className="text-2xl font-semibold mb-3">🇵🇹 Hindi Language Support</h3>
+        <p className="text-gray-700 mb-6">Hindi language support available for Indian customers. Great advantage for non-English speakers.</p>
+        <h3 className="text-2xl font-semibold mb-3">📚 Knowledge Base</h3>
+        <p className="text-gray-700 mb-6">Good knowledge base with tutorials and FAQs. Community forums for peer support.</p>
+        <h3 className="text-2xl font-semibold mb-3">⭐ Overall Assessment</h3>
+        <p className="text-gray-700">MilesWeb support is solid for Indian users. Language support and local understanding of Indian market is a major advantage.</p>
+      </section>
+
+      <section id="verdict" className="mb-12 pb-8 border-b">
+        <h2 className="text-3xl font-bold mb-4">Final Verdict: Is MilesWeb Worth It?</h2>
+        
+        <div className="bg-blue-50 p-6 rounded-lg mb-6 border-l-4 border-blue-600">
+          <h3 className="text-2xl font-bold mb-4">Rating: ⭐⭐⭐⭐ 4.1/5</h3>
+          <p className="text-gray-800">
+            MilesWeb is an excellent choice for Indian users wanting affordable hosting with good performance. The combination of SSD storage, India-optimized infrastructure, and Hindi language support makes it ideal for Indian businesses and bloggers.
+          </p>
+        </div>
+
+        <h3 className="text-2xl font-semibold mb-4">Best For:</h3>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+          <li>Indian websites and businesses</li>
+          <li>Budget-conscious users in India</li>
+          <li>Small e-commerce stores targeting India</li>
+          <li>Bloggers and content creators in India</li>
+          <li>Non-English speakers preferring Hindi support</li>
+        </ul>
+
+        <h3 className="text-2xl font-semibold mb-4">Not Best For:</h3>
+        <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
+          <li>Global businesses needing worldwide data centers</li>
+          <li>High-traffic e-commerce sites</li>
+          <li>Performance-critical applications</li>
+          <li>Non-Indian users (fewer English resources)</li>
+        </ul>
+
+        <div className="bg-green-100 border-l-4 border-green-600 p-6 rounded-lg">
+          <h3 className="font-bold text-lg mb-3">✅ Recommendation</h3>
+          <p className="text-gray-800 mb-4">
+            If you're an Indian business or blogger looking for affordable hosting with India-specific optimizations, MilesWeb is an excellent choice. The combination of SSD performance, local data centers, and Hindi language support makes it uniquely suited for Indian users.
+          </p>
+          <p className="text-gray-800 mb-4">
+            The pricing is competitive, and renewal prices are reasonable compared to global competitors. MilesWeb's focus on the Indian market means they understand local needs better than international providers.
+          </p>
+          <p className="text-gray-800">
+            For international businesses or global reach requirements, you might prefer Bluehost or SiteGround. But for India-focused operations, MilesWeb offers genuine value and local expertise.
+          </p>
+        </div>
+      </section>
+
       <Comments reviewName="MilesWeb" />
 
       <RelatedReviews currentReview="MilesWeb" />
