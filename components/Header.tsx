@@ -15,15 +15,21 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-6 text-sm">
             <Link href="/" className="hover:text-blue-200 transition">
               Home
             </Link>
             <Link href="/blog/hosting-comparison" className="hover:text-blue-200 transition">
               Comparison
             </Link>
-            <Link href="/affiliate-disclosure" className="hover:text-blue-200 transition">
-              Disclosure
+            <Link href="/blog/bluehost-review" className="hover:text-blue-200 transition">
+              Bluehost
+            </Link>
+            <Link href="/blog/siteground-review" className="hover:text-blue-200 transition">
+              SiteGround
+            </Link>
+            <Link href="/blog/a2-hosting-review" className="hover:text-blue-200 transition">
+              A2 Hosting
             </Link>
             <Link href="/contact" className="hover:text-blue-200 transition">
               Contact
@@ -60,8 +66,14 @@ export default function Header() {
             <Link href="/blog/hosting-comparison" className="block hover:text-blue-200 py-2">
               Comparison
             </Link>
-            <Link href="/affiliate-disclosure" className="block hover:text-blue-200 py-2">
-              Disclosure
+            <Link href="/blog/bluehost-review" className="block hover:text-blue-200 py-2">
+              Bluehost Review
+            </Link>
+            <Link href="/blog/siteground-review" className="block hover:text-blue-200 py-2">
+              SiteGround Review
+            </Link>
+            <Link href="/blog/a2-hosting-review" className="block hover:text-blue-200 py-2">
+              A2 Hosting Review
             </Link>
             <Link href="/contact" className="block hover:text-blue-200 py-2">
               Contact
