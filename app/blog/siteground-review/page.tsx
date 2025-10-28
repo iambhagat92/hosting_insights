@@ -408,6 +408,18 @@ export default function SiteGroundReview() {
         </div>
       </section>
 
+      <div className="mt-8 p-6 bg-gradient-to-r from-emerald-600 to-emerald-800 text-white rounded-lg text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+        <a
+          href="https://www.siteground.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-emerald-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
+        >
+          🚀 Get SiteGround Now
+        </a>
+      </div>
+
       {/* Verdict */}
       <section id="verdict">
         <h2 className="text-3xl font-bold mb-4">Final Verdict: Is SiteGround Worth It?</h2>

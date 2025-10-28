@@ -440,6 +440,18 @@ export default function A2HostingReview() {
         <p className="text-gray-700 mt-4 text-sm"><strong>Note:</strong> A2 Hosting setup fees typically range from $49-$99 depending on the plan and current promotions. These are often waived during sales.</p>
       </section>
 
+      <div className="mt-8 p-6 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-lg text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+        <a
+          href="https://www.a2hosting.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-red-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
+        >
+          🚀 Get A2 Hosting Now
+        </a>
+      </div>
+
       {/* Verdict */}
       <section id="verdict">
         <h2 className="text-3xl font-bold mb-4">Final Verdict: Is A2 Hosting Worth It?</h2>

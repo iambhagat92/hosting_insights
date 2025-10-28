@@ -123,6 +123,18 @@ export default function DreamHostReview() {
         </a>
       </div>
 
+      <div className="mt-8 p-6 bg-gradient-to-r from-green-600 to-green-800 text-white rounded-lg text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+        <a
+          href="https://www.dreamhost.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-green-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
+        >
+          🚀 Get DreamHost Now
+        </a>
+      </div>
+
       {/* Infographics */}
       <section className="mb-12 pb-8 border-b">
         <h2 className="text-3xl font-bold mb-6">DreamHost at a Glance</h2>

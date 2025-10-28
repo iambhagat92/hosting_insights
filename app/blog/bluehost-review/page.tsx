@@ -413,6 +413,18 @@ export default function BlueHostReview() {
         </div>
       </section>
 
+      <div className="mt-8 p-6 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-lg text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+        <a
+          href="https://www.bluehost.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
+        >
+          🚀 Get Bluehost Now
+        </a>
+      </div>
+
       {/* Verdict */}
       <section id="verdict">
         <h2 className="text-3xl font-bold mb-4">Final Verdict: Is Bluehost Worth It?</h2>

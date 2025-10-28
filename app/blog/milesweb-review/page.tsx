@@ -183,6 +183,18 @@ export default function MilesWebReview() {
         </p>
       </section>
 
+      <div className="mt-8 p-6 bg-gradient-to-r from-cyan-600 to-cyan-800 text-white rounded-lg text-center">
+        <h3 className="text-2xl font-bold mb-4">Ready to Get Started?</h3>
+        <a
+          href="https://www.milesweb.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-cyan-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition"
+        >
+          🚀 Get MilesWeb Now
+        </a>
+      </div>
+
       <section id="pros" className="mb-12 pb-8 border-b">
         <h2 className="text-3xl font-bold mb-4">MilesWeb Pros: Why Choose MilesWeb?</h2>
         <div className="space-y-4">
