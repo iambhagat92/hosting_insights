@@ -148,6 +148,56 @@ export default function InterServerReview() {
         </a>
       </div>
 
+      {/* VPS Special Offer Section */}
+      <section className="my-12 p-8 bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 text-white rounded-xl shadow-2xl">
+        <div className="text-center">
+          <div className="inline-block bg-yellow-400 text-purple-900 px-4 py-2 rounded-full font-bold mb-4">
+            ⚡ EXCLUSIVE LIMITED TIME OFFER ⚡
+          </div>
+          <h2 className="text-4xl font-bold mb-4">Looking for More Power?</h2>
+          <p className="text-xl mb-6 text-gray-100 max-w-2xl mx-auto">
+            Beyond shared hosting, InterServer offers scalable <strong>Virtual Private Server (VPS)</strong> solutions with the same lifetime price lock guarantee!
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-4 mb-8 mt-8">
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg border-2 border-yellow-400">
+              <div className="text-3xl font-bold mb-2">💻</div>
+              <h3 className="font-bold mb-2">Full Root Access</h3>
+              <p className="text-sm text-gray-200">Complete control over your server environment</p>
+            </div>
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg border-2 border-yellow-400">
+              <div className="text-3xl font-bold mb-2">⚡</div>
+              <h3 className="font-bold mb-2">High Performance</h3>
+              <p className="text-sm text-gray-200">Dedicated resources for faster loading</p>
+            </div>
+            <div className="bg-white bg-opacity-10 p-4 rounded-lg border-2 border-yellow-400">
+              <div className="text-3xl font-bold mb-2">💰</div>
+              <h3 className="font-bold mb-2">Lifetime Savings</h3>
+              <p className="text-sm text-gray-200">Prices locked forever - same as shared hosting</p>
+            </div>
+          </div>
+
+          <div className="bg-yellow-400 text-purple-900 p-6 rounded-lg mb-8 inline-block max-w-2xl">
+            <p className="text-lg font-bold mb-3">✨ SPECIAL VPS COUPON CODE AVAILABLE ✨</p>
+            <p className="mb-4">Get exclusive discounts on InterServer VPS hosting with our special coupon code</p>
+            <p className="text-2xl font-bold">Click the link below for your special VPS offer</p>
+          </div>
+
+          <a
+            href="https://www.interserver.net/vps-hosting.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition transform hover:scale-105 mb-4"
+          >
+            🚀 CLAIM YOUR VPS SPECIAL OFFER NOW
+          </a>
+
+          <p className="text-gray-200 text-sm mt-6">
+            Why settle for shared hosting limits? Upgrade to VPS and get dedicated resources, full control, and the same lifetime pricing guarantee. Perfect for growing websites, e-commerce stores, and developers.
+          </p>
+        </div>
+      </section>
+
       {/* Infographics */}
       <section className="mb-12 pb-8 border-b">
         <h2 className="text-3xl font-bold mb-6">InterServer at a Glance</h2>
