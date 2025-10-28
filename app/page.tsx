@@ -46,6 +46,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Quick Buying Guide */}
+      <section className="bg-white py-16 border-t-4 border-blue-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-12">How to Choose the Right Hosting</h2>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-xl font-bold mb-3">Budget</h3>
+              <p className="text-gray-700 text-sm">
+                Web hosting ranges from $1-2/month for basics to $100+/month for premium. Set your budget first.
+              </p>
+            </div>
+            <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-xl font-bold mb-3">Performance</h3>
+              <p className="text-gray-700 text-sm">
+                Fast loading speeds improve user experience and SEO. Check uptime guarantees (99.9%+ is good).
+              </p>
+            </div>
+            <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="text-4xl mb-4">🔒</div>
+              <h3 className="text-xl font-bold mb-3">Security</h3>
+              <p className="text-gray-700 text-sm">
+                Free SSL certificates, daily backups, and malware scanning are essential for protecting your site.
+              </p>
+            </div>
+            <div className="bg-blue-50 p-6 rounded-lg">
+              <div className="text-4xl mb-4">📞</div>
+              <h3 className="text-xl font-bold mb-3">Support</h3>
+              <p className="text-gray-700 text-sm">
+                24/7 support via chat/phone is crucial. Test support quality before committing to a long-term plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Hosts */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
