@@ -184,7 +184,7 @@ export default function InterServerReview() {
           </div>
 
           <a
-            href="https://www.interserver.net/vps-hosting.html"
+            href="https://www.interserver.net/vps/?id=586242"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-yellow-400 text-purple-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition transform hover:scale-105 mb-4"
