@@ -6,6 +6,20 @@ interface HostingCardProps {
   link: string;
 }
 
+const getBlogLink = (name: string): string => {
+  const links: Record<string, string> = {
+    "Bluehost": "/blog/bluehost-review",
+    "SiteGround": "/blog/siteground-review",
+    "A2 Hosting": "/blog/a2-hosting-review",
+    "HostGator": "/blog/hostgator-review",
+    "DreamHost": "/blog/dreamhost-review",
+    "InterServer": "/blog/interserver-review",
+    "Namecheap": "/blog/namecheap-review",
+    "MilesWeb": "/blog/milesweb-review",
+  };
+  return links[name] || "#";
+};
+
 export default function HostingCard({
   name,
   rating,
@@ -34,7 +48,7 @@ export default function HostingCard({
         </ul>
 
         <a
-          href={link}
+          href={getBlogLink(name)}
           className="w-full block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold"
         >
           Learn More
