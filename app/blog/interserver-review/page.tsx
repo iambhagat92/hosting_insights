@@ -159,21 +159,21 @@ export default function InterServerReview() {
             Beyond shared hosting, InterServer offers scalable <strong>Virtual Private Server (VPS)</strong> solutions with the same lifetime price lock guarantee!
           </p>
           
-          <div className="grid md:grid-cols-3 gap-4 mb-8 mt-8">
-            <div className="bg-white bg-opacity-20 p-4 rounded-lg border-2 border-yellow-400">
-              <div className="text-4xl font-bold mb-2">💻</div>
-              <h3 className="font-bold mb-2 text-white text-lg">Full Root Access</h3>
-              <p className="text-sm text-white font-medium">Complete control over your server environment</p>
+          <div className="grid md:grid-cols-3 gap-6 mb-8 mt-8">
+            <div className="bg-yellow-400 p-6 rounded-lg border-2 border-yellow-300 text-center">
+              <div className="text-5xl mb-3">💻</div>
+              <h3 className="font-bold mb-2 text-purple-900 text-lg">Full Root Access</h3>
+              <p className="text-sm text-purple-900 font-medium">Complete control over your server environment</p>
             </div>
-            <div className="bg-white bg-opacity-20 p-4 rounded-lg border-2 border-yellow-400">
-              <div className="text-4xl font-bold mb-2">⚡</div>
-              <h3 className="font-bold mb-2 text-white text-lg">High Performance</h3>
-              <p className="text-sm text-white font-medium">Dedicated resources for faster loading</p>
+            <div className="bg-yellow-400 p-6 rounded-lg border-2 border-yellow-300 text-center">
+              <div className="text-5xl mb-3">⚡</div>
+              <h3 className="font-bold mb-2 text-purple-900 text-lg">High Performance</h3>
+              <p className="text-sm text-purple-900 font-medium">Dedicated resources for faster loading</p>
             </div>
-            <div className="bg-white bg-opacity-20 p-4 rounded-lg border-2 border-yellow-400">
-              <div className="text-4xl font-bold mb-2">💰</div>
-              <h3 className="font-bold mb-2 text-white text-lg">Lifetime Savings</h3>
-              <p className="text-sm text-white font-medium">Prices locked forever - same as shared hosting</p>
+            <div className="bg-yellow-400 p-6 rounded-lg border-2 border-yellow-300 text-center">
+              <div className="text-5xl mb-3">💰</div>
+              <h3 className="font-bold mb-2 text-purple-900 text-lg">Lifetime Savings</h3>
+              <p className="text-sm text-purple-900 font-medium">Prices locked forever - same as shared hosting</p>
             </div>
           </div>
 
