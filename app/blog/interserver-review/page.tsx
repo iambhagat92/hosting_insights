@@ -52,7 +52,7 @@ export default function InterServerReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "/images/interserver-toc.png",
+          src: "/images/interserver-toc.webp",
           alt: "InterServer lifetime discount hosting",
         }}
       />

@@ -55,7 +55,7 @@ export default function SiteGroundReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "/images/siteground-toc.png",
+          src: "/images/siteground-toc.webp",
           alt: "SiteGround premium hosting",
         }}
       />

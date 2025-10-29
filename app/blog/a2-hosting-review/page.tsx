@@ -56,7 +56,7 @@ export default function A2HostingReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "/images/a2-hosting-toc.png",
+          src: "/images/a2-hosting-toc.webp",
           alt: "A2 Hosting Turbo servers",
         }}
       />

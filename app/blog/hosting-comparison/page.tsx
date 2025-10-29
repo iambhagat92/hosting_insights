@@ -21,7 +21,7 @@ export default function BlogPage() {
           { id: "conclusion", label: "Conclusion" },
         ]}
         image={{
-          src: "/images/hostinger-toc.png",
+          src: "/images/hostinger-toc.webp",
           alt: "Web hosting comparison overview",
         }}
       />

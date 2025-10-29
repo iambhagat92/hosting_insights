@@ -1,13 +1,13 @@
-Place TOC images for all review pages here. Expected filenames:
-- bluehost-toc.png
-- siteground-toc.png
-- a2-hosting-toc.png
-- interserver-toc.png
-- hostgator-toc.png
-- dreamhost-toc.png
-- namecheap-toc.png
-- milesweb-toc.png
-- comparison-toc.png (optional)
-- hostinger-toc.png (used on comparison page currently)
+Place TOC images for all review pages here. Preferred format: WebP for best performance. Keep PNG/JPG as fallbacks if needed.
+Expected basenames:
+- bluehost-toc.webp (fallback: .png/.jpg)
+- siteground-toc.webp (fallback: .png/.jpg)
+- a2-hosting-toc.webp (fallback: .png/.jpg)
+- interserver-toc.webp (fallback: .png/.jpg)
+- hostgator-toc.webp (fallback: .png/.jpg)
+- dreamhost-toc.webp (fallback: .png/.jpg)
+- namecheap-toc.webp (fallback: .png/.jpg)
+- milesweb-toc.webp (fallback: .png/.jpg)
+- hostinger-toc.webp (used on comparison page currently)
 
-Recommended size: 1200x900 (or similar 4:3). PNG or JPG.
+Recommended size: 1200x900 (4:3). File size target: ≤300KB.

@@ -50,7 +50,7 @@ export default function DreamHostReview() {
           { id: "proscons", label: "Pros & Cons" },
         ]}
         image={{
-          src: "/images/dreamhost-toc.png",
+          src: "/images/dreamhost-toc.webp",
           alt: "DreamHost developer-friendly hosting",
         }}
       />
