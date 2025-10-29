@@ -2,6 +2,7 @@ import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
+import TableOfContents from "@/components/TableOfContents";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -41,6 +42,19 @@ export default function DreamHostReview() {
       />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-5xl font-bold mb-6">DreamHost Review 2025: Developer-Friendly Hosting</h1>
+
+      <TableOfContents
+        items={[
+          { id: "overview", label: "What is DreamHost?" },
+          { id: "pricing", label: "Pricing Plans" },
+          { id: "features", label: "Features" },
+          { id: "proscons", label: "Pros & Cons" },
+        ]}
+        image={{
+          src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+          alt: "DreamHost developer hosting",
+        }}
+      />
 
       <section className="mb-12 pb-8 border-b">
         <h2 className="text-3xl font-bold mb-4">What is DreamHost?</h2>

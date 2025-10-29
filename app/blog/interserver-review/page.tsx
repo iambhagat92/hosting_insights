@@ -2,6 +2,7 @@ import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
+import TableOfContents from "@/components/TableOfContents";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -40,19 +41,22 @@ export default function InterServerReview() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="bg-blue-50 p-6 rounded-lg mb-8">
-        <h2 className="font-bold text-lg mb-4">Quick Links</h2>
-        <ul className="space-y-2 text-sm">
-          <li><Link href="#overview" className="text-blue-600 hover:underline">Overview</Link></li>
-          <li><Link href="#pricing" className="text-blue-600 hover:underline">Pricing</Link></li>
-          <li><Link href="#features" className="text-blue-600 hover:underline">Features</Link></li>
-          <li><Link href="#pros" className="text-blue-600 hover:underline">Pros</Link></li>
-          <li><Link href="#cons" className="text-blue-600 hover:underline">Cons</Link></li>
-          <li><Link href="#verdict" className="text-blue-600 hover:underline">Verdict</Link></li>
-        </ul>
-      </div>
-
       <h1 className="text-5xl font-bold mb-6">InterServer Review 2025: Lifetime Discount Hosting</h1>
+
+      <TableOfContents
+        items={[
+          { id: "overview", label: "Overview" },
+          { id: "pricing", label: "Pricing" },
+          { id: "features", label: "Features" },
+          { id: "pros", label: "Pros" },
+          { id: "cons", label: "Cons" },
+          { id: "verdict", label: "Final Verdict" },
+        ]}
+        image={{
+          src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=400&h=300&fit=crop",
+          alt: "InterServer lifetime discount hosting",
+        }}
+      />
 
       <section id="overview" className="mb-12 pb-8 border-b">
         <h2 className="text-3xl font-bold mb-4">What is InterServer?</h2>

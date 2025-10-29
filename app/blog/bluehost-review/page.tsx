@@ -2,6 +2,7 @@ import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
+import TableOfContents from "@/components/TableOfContents";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -47,20 +48,23 @@ export default function BlueHostReview() {
       />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* TOC */}
-      <div className="bg-blue-50 p-6 rounded-lg mb-8">
-        <h2 className="font-bold text-lg mb-4">Table of Contents</h2>
-        <ul className="space-y-2 text-sm">
-          <li><Link href="#intro" className="text-blue-600 hover:underline">Introduction</Link></li>
-          <li><Link href="#overview" className="text-blue-600 hover:underline">Bluehost Overview</Link></li>
-          <li><Link href="#pricing" className="text-blue-600 hover:underline">Pricing Plans</Link></li>
-          <li><Link href="#features" className="text-blue-600 hover:underline">Key Features</Link></li>
-          <li><Link href="#performance" className="text-blue-600 hover:underline">Performance & Speed</Link></li>
-          <li><Link href="#pros" className="text-blue-600 hover:underline">Pros</Link></li>
-          <li><Link href="#cons" className="text-blue-600 hover:underline">Cons</Link></li>
-          <li><Link href="#support" className="text-blue-600 hover:underline">Customer Support</Link></li>
-          <li><Link href="#verdict" className="text-blue-600 hover:underline">Final Verdict</Link></li>
-        </ul>
-      </div>
+      <TableOfContents
+        items={[
+          { id: "intro", label: "Introduction" },
+          { id: "overview", label: "Bluehost Overview" },
+          { id: "pricing", label: "Pricing Plans" },
+          { id: "features", label: "Key Features" },
+          { id: "performance", label: "Performance & Speed" },
+          { id: "pros", label: "Pros" },
+          { id: "cons", label: "Cons" },
+          { id: "support", label: "Customer Support" },
+          { id: "verdict", label: "Final Verdict" },
+        ]}
+        image={{
+          src: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop",
+          alt: "Bluehost hosting review",
+        }}
+      />
 
       {/* Introduction */}
       <section id="intro" className="mb-12">
