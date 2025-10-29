@@ -43,7 +43,8 @@ export default function TableOfContents({ items, image }: TableOfContentsProps) 
               width={1200}
               height={900}
               className="w-full h-auto max-w-[600px] object-cover rounded-lg"
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
         )}

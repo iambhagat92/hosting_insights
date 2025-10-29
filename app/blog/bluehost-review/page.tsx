@@ -31,6 +31,23 @@ export const metadata = {
   title: "Bluehost Review 2025: Is It Worth It? Complete Guide & Pricing",
   description: "In-depth Bluehost review covering features, pros, cons, pricing, performance, and whether it's the best WordPress hosting. Read our honest expert analysis.",
   keywords: "Bluehost review, Bluehost hosting, Bluehost vs others, Bluehost pricing, WordPress hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/bluehost-review",
+    title: "Bluehost Review 2025: Is It Worth It? Complete Guide & Pricing",
+    description:
+      "In-depth Bluehost review covering features, pros, cons, pricing, performance, and whether it's the best WordPress hosting.",
+    images: [
+      { url: "/images/bluehost-toc.webp", width: 1200, height: 900, alt: "Bluehost overview" },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bluehost Review 2025",
+    description:
+      "Comprehensive Bluehost review — features, pricing, pros/cons, and performance benchmarks.",
+    images: ["/images/bluehost-toc.webp"],
+  },
 };
 
 export default function BlueHostReview() {
@@ -40,6 +57,17 @@ export default function BlueHostReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Is Bluehost good for WordPress?", acceptedAnswer: { "@type": "Answer", text: "Yes. Bluehost is officially recommended by WordPress.org and offers one‑click installs, AutoSSL and reliable uptime for beginner sites." } },
+            { "@type": "Question", name: "What is Bluehost pricing after renewal?", acceptedAnswer: { "@type": "Answer", text: "Promotional plans start at $2.95/month; renewals are higher (around $8.99+/month). Lock a longer intro term to save more." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="Bluehost Review 2025" path="/blog/bluehost-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

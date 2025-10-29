@@ -31,6 +31,19 @@ export const metadata = {
   title: "DreamHost Review 2025: Open-Source Hosting with 97-Day Money Back",
   description: "DreamHost review - affordable hosting with 97-day guarantee. Best for open-source projects and developers.",
   keywords: "DreamHost review, DreamHost hosting, open source hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/dreamhost-review",
+    title: "DreamHost Review 2025",
+    description: "97‑day guarantee and open‑source friendly — full DreamHost review.",
+    images: [{ url: "/images/dreamhost-toc.webp", width: 1200, height: 900, alt: "DreamHost" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DreamHost Review 2025",
+    description: "Affordable hosting with generous refund window.",
+    images: ["/images/dreamhost-toc.webp"],
+  },
 };
 
 export default function DreamHostReview() {
@@ -39,6 +52,17 @@ export default function DreamHostReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "How long is the DreamHost refund?", acceptedAnswer: { "@type": "Answer", text: "A market‑leading 97 days on shared hosting." } },
+            { "@type": "Question", name: "Does DreamHost include free SSL?", acceptedAnswer: { "@type": "Answer", text: "Yes, AutoSSL certificates are included on all plans." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="DreamHost Review 2025" path="/blog/dreamhost-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

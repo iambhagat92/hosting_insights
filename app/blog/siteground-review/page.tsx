@@ -31,6 +31,19 @@ export const metadata = {
   title: "SiteGround Review 2025: Best Performance Hosting? Complete Analysis",
   description: "In-depth SiteGround review covering pricing, features, speed, uptime, customer support, and performance benchmarks. Is SiteGround worth the premium price?",
   keywords: "SiteGround review, SiteGround hosting, best hosting for speed, SiteGround pricing, premium web hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/siteground-review",
+    title: "SiteGround Review 2025",
+    description: "Is SiteGround worth the premium? We test speed, uptime and support.",
+    images: [{ url: "/images/siteground-toc.webp", width: 1200, height: 900, alt: "SiteGround" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SiteGround Review 2025",
+    description: "Premium speed and 99.99% uptime — full SiteGround analysis.",
+    images: ["/images/siteground-toc.webp"],
+  },
 };
 
 export default function SiteGroundReview() {
@@ -39,6 +52,17 @@ export default function SiteGroundReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Is SiteGround fast?", acceptedAnswer: { "@type": "Answer", text: "Yes. With SuperCacher, SSDs and optimized stack, typical load times are under 1s for well‑optimized sites." } },
+            { "@type": "Question", name: "Does SiteGround have 24/7 support?", acceptedAnswer: { "@type": "Answer", text: "Yes. Live chat is available 24/7/365 and response times are among the best in our tests." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="SiteGround Review 2025" path="/blog/siteground-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

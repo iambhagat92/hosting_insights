@@ -31,6 +31,19 @@ export const metadata = {
   title: "A2 Hosting Review 2025: Best Value for Speed & Developers? Full Analysis",
   description: "Complete A2 Hosting review covering Turbo servers, pricing, speed benchmarks, developer features, pros & cons. Is A2 Hosting worth it for your website?",
   keywords: "A2 Hosting review, A2 Hosting Turbo, developer hosting, affordable fast hosting, A2 Hosting pricing",
+  openGraph: {
+    type: "article",
+    url: "/blog/a2-hosting-review",
+    title: "A2 Hosting Review 2025",
+    description: "Turbo servers up to 3x faster — see pricing and real speed tests.",
+    images: [{ url: "/images/a2-hosting-toc.webp", width: 1200, height: 900, alt: "A2 Hosting" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "A2 Hosting Review 2025",
+    description: "Best value for speed? Full A2 Hosting analysis.",
+    images: ["/images/a2-hosting-toc.webp"],
+  },
 };
 
 export default function A2HostingReview() {
@@ -39,6 +52,17 @@ export default function A2HostingReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Are A2 Turbo servers worth it?", acceptedAnswer: { "@type": "Answer", text: "For performance‑focused sites, Turbo with SSD and caching is noticeably faster than standard shared plans." } },
+            { "@type": "Question", name: "Does A2 offer refunds?", acceptedAnswer: { "@type": "Answer", text: "Yes. They provide an anytime money‑back guarantee—pro‑rated after the first 30 days." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="A2 Hosting Review 2025" path="/blog/a2-hosting-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

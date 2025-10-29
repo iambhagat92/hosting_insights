@@ -31,6 +31,19 @@ export const metadata = {
   title: "HostGator Review 2025: Budget Hosting with Great Support",
   description: "HostGator review - affordable hosting with excellent customer support. Best budget option.",
   keywords: "HostGator review, HostGator hosting, budget web hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/hostgator-review",
+    title: "HostGator Review 2025",
+    description: "Cheap hosting with solid support — pricing and pros/cons.",
+    images: [{ url: "/images/hostgator-toc.webp", width: 1200, height: 900, alt: "HostGator" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HostGator Review 2025",
+    description: "Is HostGator good in 2025? Read our unbiased review.",
+    images: ["/images/hostgator-toc.webp"],
+  },
 };
 
 export default function HostGatorReview() {
@@ -39,6 +52,17 @@ export default function HostGatorReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Is HostGator good for beginners?", acceptedAnswer: { "@type": "Answer", text: "Yes. It’s affordable with 24/7 support and one‑click installs—great for first sites." } },
+            { "@type": "Question", name: "What about renewal pricing?", acceptedAnswer: { "@type": "Answer", text: "Intro plans are cheap; renewals rise to $8.95–$12.95/mo. Budget accordingly." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="HostGator Review 2025" path="/blog/hostgator-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

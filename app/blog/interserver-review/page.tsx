@@ -31,6 +31,19 @@ export const metadata = {
   title: "InterServer Review 2025: Affordable Hosting with Lifetime Discounts",
   description: "Complete InterServer review - pricing, features, speed, support. Is InterServer's lifetime discounted pricing worth it?",
   keywords: "InterServer review, InterServer hosting, lifetime discount hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/interserver-review",
+    title: "InterServer Review 2025",
+    description: "Lifetime price lock at $2.50/mo — full InterServer review.",
+    images: [{ url: "/images/interserver-toc.webp", width: 1200, height: 900, alt: "InterServer" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "InterServer Review 2025",
+    description: "Is the lifetime price lock worth it? Read now.",
+    images: ["/images/interserver-toc.webp"],
+  },
 };
 
 export default function InterServerReview() {
@@ -39,6 +52,17 @@ export default function InterServerReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Does InterServer increase prices?", acceptedAnswer: { "@type": "Answer", text: "No. Their lifetime price lock keeps your monthly fee at the signup rate." } },
+            { "@type": "Question", name: "Is InterServer fast?", acceptedAnswer: { "@type": "Answer", text: "Speed is decent for the price, though not as fast as premium providers like SiteGround." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="InterServer Review 2025" path="/blog/interserver-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

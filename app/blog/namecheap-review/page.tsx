@@ -31,6 +31,19 @@ export const metadata = {
   title: "Namecheap Review 2025: Budget Hosting with Free Domain",
   description: "Namecheap hosting review - cheap shared hosting with free domain. Best budget option for beginners.",
   keywords: "Namecheap review, Namecheap hosting, budget hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/namecheap-review",
+    title: "Namecheap Review 2025",
+    description: "Cheapest intro pricing with free domain — full Namecheap review.",
+    images: [{ url: "/images/namecheap-toc.webp", width: 1200, height: 900, alt: "Namecheap" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Namecheap Review 2025",
+    description: "Best budget hosting? See pricing, speed and support.",
+    images: ["/images/namecheap-toc.webp"],
+  },
 };
 
 export default function NamecheapReview() {
@@ -39,6 +52,17 @@ export default function NamecheapReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Is Namecheap hosting reliable?", acceptedAnswer: { "@type": "Answer", text: "For small sites it’s reliable with 99.9% SLA; heavy traffic may need an upgrade." } },
+            { "@type": "Question", name: "Does Namecheap include a free domain?", acceptedAnswer: { "@type": "Answer", text: "Yes. Shared plans include a free domain for the first year." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="Namecheap Review 2025" path="/blog/namecheap-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

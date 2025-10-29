@@ -31,6 +31,19 @@ export const metadata = {
   title: "MilesWeb Review 2025: Affordable Hosting with Good Speed",
   description: "MilesWeb review - budget hosting with decent performance. Best for Indian users and small businesses.",
   keywords: "MilesWeb review, MilesWeb hosting, cheap Indian hosting",
+  openGraph: {
+    type: "article",
+    url: "/blog/milesweb-review",
+    title: "MilesWeb Review 2025",
+    description: "Budget Indian hosting with SSD speed — full review.",
+    images: [{ url: "/images/milesweb-toc.webp", width: 1200, height: 900, alt: "MilesWeb" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MilesWeb Review 2025",
+    description: "Affordable India‑focused hosting — pros, cons, pricing.",
+    images: ["/images/milesweb-toc.webp"],
+  },
 };
 
 export default function MilesWebReview() {
@@ -39,6 +52,17 @@ export default function MilesWebReview() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: [
+            { "@type": "Question", name: "Is MilesWeb good for Indian sites?", acceptedAnswer: { "@type": "Answer", text: "Yes. Local data centers provide faster load times for Indian audiences." } },
+            { "@type": "Question", name: "Does MilesWeb include SSD?", acceptedAnswer: { "@type": "Answer", text: "Yes, SSD storage is standard across plans." } }
+          ]
+        }) }}
       />
       <BreadcrumbJsonLd title="MilesWeb Review 2025" path="/blog/milesweb-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
