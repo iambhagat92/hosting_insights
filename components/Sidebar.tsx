@@ -1,6 +1,22 @@
+"use client";
+
 import Link from "next/link";
+import { useMemo, useState } from "react";
+import { POSTS_INDEX } from "@/data/posts";
 
 export default function Sidebar() {
+  const [q, setQ] = useState("");
+
+  const results = useMemo(() => {
+    const term = q.trim().toLowerCase();
+    if (!term) return [];
+    return POSTS_INDEX.filter((p) => {
+      const inTitle = p.title.toLowerCase().includes(term);
+      const inKw = (p.keywords || []).some((k) => k.toLowerCase().includes(term));
+      return inTitle || inKw;
+    }).slice(0, 8);
+  }, [q]);
+
   return (
     <aside className="space-y-6">
       {/* Search */}
@@ -9,25 +25,30 @@ export default function Sidebar() {
         <div className="relative">
           <input
             type="text"
-            placeholder="Search articles..."
+            placeholder="Search articles... (e.g. siteground, a2, bluehost)"
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
             className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-            readOnly
           />
           <div className="absolute right-2 top-2 text-gray-400">⌕</div>
         </div>
-        <p className="mt-2 text-xs text-gray-500">Search coming soon.</p>
-      </div>
-
-      {/* Compare CTA */}
-      <div className="bg-blue-50 rounded-lg border border-blue-200 p-4">
-        <h3 className="text-sm font-semibold text-blue-900 mb-2">Compare Hosting</h3>
-        <p className="text-sm text-blue-900/80 mb-3">See our side‑by‑side breakdown of the top providers.</p>
-        <Link
-          href="/blog/hosting-comparison"
-          className="inline-block bg-blue-600 text-white text-sm font-semibold px-4 py-2 rounded-md hover:bg-blue-700 transition"
-        >
-          View Comparison
-        </Link>
+        {q && (
+          <div className="mt-3">
+            {results.length === 0 ? (
+              <p className="text-xs text-gray-500">No results.</p>
+            ) : (
+              <ul className="divide-y divide-gray-100 border border-gray-100 rounded-md overflow-hidden">
+                {results.map((p) => (
+                  <li key={p.slug} className="bg-white hover:bg-gray-50">
+                    <Link href={p.slug} className="block px-3 py-2 text-sm text-blue-700 hover:underline">
+                      {p.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Top Reviews */}
