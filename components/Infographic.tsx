@@ -131,7 +131,7 @@ export default function Infographic({ data }: { data: InfographicData }) {
 
 // Preset configurations for common hosting comparisons
 export const hostingInfographics = {
-  pricingComparison: (hostName: string, plans: any[]) => ({
+  pricingComparison: (hostName: string, plans: { name: string; price: string; icon?: string; color?: string }[]) => ({
     title: `${hostName} Pricing Breakdown`,
     items: plans.map((plan) => ({
       label: plan.name,
@@ -168,7 +168,7 @@ export const hostingInfographics = {
     layout: "metrics" as const,
   }),
 
-  featuresHighlight: (hostName: string, features: any[]) => ({
+  featuresHighlight: (hostName: string, features: { name: string; status: string; icon?: string }[]) => ({
     title: `${hostName} Key Features`,
     items: features.map((feature) => ({
       label: feature.name,

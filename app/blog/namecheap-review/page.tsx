@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
@@ -273,7 +272,7 @@ export default function NamecheapReview() {
         </a>
       </div>
 
-      <Comments reviewName="Namecheap" />
+<Comments />
 
       <RelatedReviews currentReview="Namecheap" />
       </article>

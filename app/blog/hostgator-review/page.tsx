@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
@@ -199,7 +198,7 @@ export default function HostGatorReview() {
         </p>
       </section>
 
-      <Comments reviewName="HostGator" />
+<Comments />
 
       <RelatedReviews currentReview="HostGator" />
       </article>

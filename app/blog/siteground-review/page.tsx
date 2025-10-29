@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
@@ -237,35 +236,35 @@ export default function SiteGroundReview() {
           </div>
 
           <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-bold text-lg text-green-900 mb-2\">🎯 Outstanding Customer Support</h3>
+            <h3 className="font-bold text-lg text-green-900 mb-2">🎯 Outstanding Customer Support</h3>
             <p className="text-gray-700">
               24/7 live chat with knowledgeable, responsive support team that actually solves problems quickly.
             </p>
           </div>
 
           <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-bold text-lg text-green-900 mb-2\">🔒 Security Included</h3>
+            <h3 className="font-bold text-lg text-green-900 mb-2">🔒 Security Included</h3>
             <p className="text-gray-700">
               Advanced security features (SSL, firewall, malware scanning) included in every plan at no extra cost.
             </p>
           </div>
 
           <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-bold text-lg text-green-900 mb-2\">📦 Everything Included</h3>
+            <h3 className="font-bold text-lg text-green-900 mb-2">📦 Everything Included</h3>
             <p className="text-gray-700">
               SSL certificates, backups, CDN support, staging environment, and more—no hidden or optional fees.
             </p>
           </div>
 
           <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-bold text-lg text-green-900 mb-2\">🏃 Free Migration</h3>
+            <h3 className="font-bold text-lg text-green-900 mb-2">🏃 Free Migration</h3>
             <p className="text-gray-700">
               Hassle-free migration from your current host with SiteGround handling all technical details.
             </p>
           </div>
 
           <div className="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
-            <h3 className="font-bold text-lg text-green-900 mb-2\">🛠️ Advanced Developer Tools</h3>
+            <h3 className="font-bold text-lg text-green-900 mb-2">🛠️ Advanced Developer Tools</h3>
             <p className="text-gray-700">
               SSH access, Git integration, multiple PHP versions, and developer-friendly environment included.
             </p>
@@ -293,21 +292,21 @@ export default function SiteGroundReview() {
           </div>
 
           <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
-            <h3 className="font-bold text-lg text-red-900 mb-2\">📱 Setup Fees May Apply</h3>
+            <h3 className="font-bold text-lg text-red-900 mb-2">📱 Setup Fees May Apply</h3>
             <p className="text-gray-700">
               Some plans historically charged setup fees, though these are often waived during promotions.
             </p>
           </div>
 
           <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
-            <h3 className="font-bold text-lg text-red-900 mb-2\">🌐 Limited Domain Staging</h3>
+            <h3 className="font-bold text-lg text-red-900 mb-2">🌐 Limited Domain Staging</h3>
             <p className="text-gray-700">
               WordPress staging is included, but staging for other CMS platforms requires additional tools or configuration.
             </p>
           </div>
 
           <div className="p-4 bg-red-50 rounded-lg border-l-4 border-red-500">
-            <h3 className="font-bold text-lg text-red-900 mb-2\">⏰ Renewal Prices Higher</h3>
+            <h3 className="font-bold text-lg text-red-900 mb-2">⏰ Renewal Prices Higher</h3>
             <p className="text-gray-700">
               Renewal prices are significantly higher than introductory rates. Budget accordingly for ongoing costs.
             </p>
@@ -466,7 +465,7 @@ export default function SiteGroundReview() {
         </div>
       </section>
 
-      <Comments reviewName="SiteGround" />
+      <Comments />
 
       <RelatedReviews currentReview="SiteGround" />
       </article>

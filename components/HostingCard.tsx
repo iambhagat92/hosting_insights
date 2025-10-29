@@ -1,9 +1,10 @@
+import Link from "next/link";
+
 interface HostingCardProps {
   name: string;
   rating: number;
   price: string;
   features: string[];
-  link: string;
 }
 
 const getBlogLink = (name: string): string => {
@@ -25,7 +26,6 @@ export default function HostingCard({
   rating,
   price,
   features,
-  link,
 }: HostingCardProps) {
   const stars = "⭐".repeat(Math.floor(rating));
 
@@ -47,12 +47,12 @@ export default function HostingCard({
           ))}
         </ul>
 
-        <a
+        <Link
           href={getBlogLink(name)}
           className="w-full block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition font-semibold"
         >
           Learn More
-        </a>
+        </Link>
       </div>
     </div>
   );

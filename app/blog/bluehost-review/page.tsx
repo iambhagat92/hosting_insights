@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
@@ -34,11 +33,6 @@ export const metadata = {
 };
 
 export default function BlueHostReview() {
-  const speedData = hostingInfographics.speedMetrics(
-    "Bluehost",
-    "1.5-2.5 seconds"
-  );
-  const reliabilityData = hostingInfographics.reliabilityMetrics("Bluehost");
 
   return (
     <>
@@ -471,7 +465,7 @@ export default function BlueHostReview() {
         </div>
       </section>
 
-      <Comments reviewName="Bluehost" />
+      <Comments />
 
       <RelatedReviews currentReview="Bluehost" />
       </article>

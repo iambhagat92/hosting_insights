@@ -11,7 +11,7 @@ interface Comment {
   rating: number;
 }
 
-export default function Comments({ reviewName }: { reviewName: string }) {
+export default function Comments() {
   const [comments, setComments] = useState<Comment[]>([]);
 
   const [formData, setFormData] = useState({

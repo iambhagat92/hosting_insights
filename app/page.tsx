@@ -8,21 +8,18 @@ export default function Home() {
       rating: 4.8,
       price: "$2.95/mo",
       features: ["24/7 Support", "Free Domain", "45-Day Guarantee"],
-      link: "#bluehost",
     },
     {
       name: "SiteGround",
       rating: 4.9,
       price: "$2.99/mo",
       features: ["Super Fast", "Great Support", "Auto Backups"],
-      link: "#siteground",
     },
     {
       name: "A2 Hosting",
       rating: 4.7,
       price: "$1.99/mo",
       features: ["Unlimited Bandwidth", "Developer Friendly", "HDD & SSD"],
-      link: "#a2hosting",
     },
   ];
 

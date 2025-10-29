@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
@@ -499,7 +498,7 @@ export default function A2HostingReview() {
         </div>
       </section>
 
-      <Comments reviewName="A2 Hosting" />
+      <Comments />
 
       <RelatedReviews currentReview="A2 Hosting" />
       </article>

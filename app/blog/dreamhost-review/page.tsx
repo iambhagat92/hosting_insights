@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
@@ -163,7 +162,7 @@ export default function DreamHostReview() {
         />
       </section>
 
-      <Comments reviewName="DreamHost" />
+      <Comments />
 
       <RelatedReviews currentReview="DreamHost" />
       </article>

@@ -1,27 +1,30 @@
-import Link from "next/link";
+import TableOfContents from "@/components/TableOfContents";
 
 export const metadata = {
-  title: "Best Web Hosting 2024: Complete Comparison Guide | Best Hosting Review",
+  title: "Best Web Hosting 2025: Complete Comparison Guide | Best Hosting Review",
   description: "Compare top web hosting providers including Bluehost, SiteGround, A2 Hosting, HostGator, Hostinger, DreamHost, and InterServer. Find your perfect hosting solution.",
-  keywords: "best web hosting 2024, web hosting comparison, Bluehost vs SiteGround, cheap web hosting",
+  keywords: "best web hosting 2025, web hosting comparison, Bluehost vs SiteGround, cheap web hosting",
 };
 
 export default function BlogPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       {/* TOC */}
-      <div className="bg-blue-50 p-6 rounded-lg mb-8">
-        <h2 className="font-bold text-lg mb-4">Table of Contents</h2>
-        <ul className="space-y-2 text-sm">
-          <li><Link href="#intro" className="text-blue-600 hover:underline">Introduction</Link></li>
-          <li><Link href="#bluehost" className="text-blue-600 hover:underline">1. Bluehost Review</Link></li>
-          <li><Link href="#siteground" className="text-blue-600 hover:underline">2. SiteGround Review</Link></li>
-          <li><Link href="#a2hosting" className="text-blue-600 hover:underline">3. A2 Hosting Review</Link></li>
-          <li><Link href="#comparison-table" className="text-blue-600 hover:underline">Comparison Table</Link></li>
-          <li><Link href="#how-to-choose" className="text-blue-600 hover:underline">How to Choose</Link></li>
-          <li><Link href="#conclusion" className="text-blue-600 hover:underline">Conclusion</Link></li>
-        </ul>
-      </div>
+      <TableOfContents
+        items={[
+          { id: "intro", label: "Introduction" },
+          { id: "bluehost", label: "1. Bluehost Review" },
+          { id: "siteground", label: "2. SiteGround Review" },
+          { id: "a2hosting", label: "3. A2 Hosting Review" },
+          { id: "comparison-table", label: "Comparison Table" },
+          { id: "how-to-choose", label: "How to Choose" },
+          { id: "conclusion", label: "Conclusion" },
+        ]}
+        image={{
+          src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+          alt: "Web hosting comparison overview",
+        }}
+      />
 
       {/* Introduction */}
       <section id="intro" className="mb-12">
