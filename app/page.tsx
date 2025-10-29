@@ -25,23 +25,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold mb-4">
-            Find Your Perfect Web Hosting
-          </h1>
-          <p className="text-xl mb-8 text-blue-100">
-            Compare the best web hosting services and make an informed decision for your website.
-          </p>
-          <Link
-            href="/blog/hosting-comparison"
-            className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition"
-          >
-            Read Full Comparison →
-          </Link>
-        </div>
-      </section>
 
       {/* Quick Buying Guide */}
       <section className="bg-white py-16 border-t-4 border-blue-600">
