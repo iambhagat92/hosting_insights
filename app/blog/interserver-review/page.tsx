@@ -2,6 +2,7 @@ import Comments from "@/components/Comments";
 import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -39,6 +40,7 @@ export default function InterServerReview() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
+      <BreadcrumbJsonLd title="InterServer Review 2025" path="/blog/interserver-review" />
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-5xl font-bold mb-6">InterServer Review 2025: Lifetime Discount Hosting</h1>
 

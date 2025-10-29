@@ -1,4 +1,5 @@
 import TableOfContents from "@/components/TableOfContents";
+import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
 
 export const metadata = {
   title: "Best Web Hosting 2025: Complete Comparison Guide | Best Hosting Review",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function BlogPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <BreadcrumbJsonLd title="Best Web Hosting Comparison" path="/blog/hosting-comparison" />
       {/* TOC */}
       <TableOfContents
         items={[

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -15,16 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hostinginsights.vercel.app"),
   title: "Best Hosting Review - Compare Top Web Hosting Services 2025",
   description: "Comprehensive guide comparing top web hosting providers. Find the best hosting for your website with detailed reviews of Bluehost, SiteGround, A2 Hosting, and more.",
   keywords: "web hosting review, best web hosting, hosting comparison, Bluehost, SiteGround, A2 Hosting, cheap hosting, best web host 2025",
   robots: "index, follow",
-  viewport: "width=device-width, initial-scale=1.0",
   openGraph: {
     type: "website",
     url: "https://hostinginsights.vercel.app",
     title: "Best Hosting Review - Compare Top Web Hosting Services 2025",
     description: "Honest reviews of the best web hosting providers. Compare features, pricing, and performance.",
+    locale: "en_US",
     images: [
       {
         url: "https://hostinginsights.vercel.app/og-image.png",
@@ -43,6 +44,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://hostinginsights.vercel.app",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 const schemaData = {
@@ -64,6 +70,11 @@ const schemaData = {
     },
     "query-input": "required name=search_term_string",
   },
+  "hasPart": [
+    { "@type": "SiteNavigationElement", "name": "Home", "url": "https://hostinginsights.vercel.app/" },
+    { "@type": "SiteNavigationElement", "name": "Comparison", "url": "https://hostinginsights.vercel.app/blog/hosting-comparison" },
+    { "@type": "SiteNavigationElement", "name": "Contact", "url": "https://hostinginsights.vercel.app/contact" }
+  ]
 };
 
 export default function RootLayout({
