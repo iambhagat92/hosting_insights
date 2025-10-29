@@ -55,7 +55,7 @@ export default function BlueHostReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+          src: "/images/bluehost-toc.png",
           alt: "Bluehost WordPress hosting",
         }}
       />
