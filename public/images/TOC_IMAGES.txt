@@ -7,6 +7,7 @@ Place TOC images for all review pages here. Expected filenames:
 - dreamhost-toc.png
 - namecheap-toc.png
 - milesweb-toc.png
-- comparison-toc.png
+- comparison-toc.png (optional)
+- hostinger-toc.png (used on comparison page currently)
 
 Recommended size: 1200x900 (or similar 4:3). PNG or JPG.
