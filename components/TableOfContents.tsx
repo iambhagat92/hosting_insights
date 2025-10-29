@@ -38,15 +38,15 @@ export default function TableOfContents({ items, image }: TableOfContentsProps) 
         {/* Image (Optional) */}
         {image && (
           <div className="md:col-span-1 flex items-center justify-center">
-            <div className="relative w-full h-64 md:h-full">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </div>
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={400}
+              height={300}
+              className="w-full h-64 md:h-auto object-cover rounded-lg"
+              sizes="(max-width: 768px) 100vw, 33vw"
+              priority={false}
+            />
           </div>
         )}
       </div>
