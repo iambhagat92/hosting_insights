@@ -21,7 +21,7 @@ export default function BlogPage() {
           { id: "conclusion", label: "Conclusion" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
+          src: "/images/comparison-toc.png",
           alt: "Web hosting comparison overview",
         }}
       />

@@ -54,7 +54,7 @@ export default function NamecheapReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1516321318423-f06f70504504?w=400&h=300&fit=crop",
+          src: "/images/namecheap-toc.png",
           alt: "Namecheap budget hosting",
         }}
       />

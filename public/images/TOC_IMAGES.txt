@@ -1,0 +1,12 @@
+Place TOC images for all review pages here. Expected filenames:
+- bluehost-toc.png
+- siteground-toc.png
+- a2-hosting-toc.png
+- interserver-toc.png
+- hostgator-toc.png
+- dreamhost-toc.png
+- namecheap-toc.png
+- milesweb-toc.png
+- comparison-toc.png
+
+Recommended size: 1200x900 (or similar 4:3). PNG or JPG.
