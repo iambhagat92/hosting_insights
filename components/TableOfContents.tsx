@@ -40,9 +40,9 @@ export default function TableOfContents({ items, image }: TableOfContentsProps) 
             <img
               src={image.src}
               alt={image.alt}
-              width={400}
-              height={300}
-              className="w-full h-64 md:h-auto object-cover rounded-lg"
+              width={1200}
+              height={900}
+              className="w-full h-auto max-w-[600px] object-cover rounded-lg"
               loading="lazy"
             />
           </div>
