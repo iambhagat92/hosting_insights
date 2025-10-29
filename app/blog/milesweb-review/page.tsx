@@ -55,7 +55,7 @@ export default function MilesWebReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300&fit=crop",
+          src: "https://images.unsplash.com/photo-1558694528-1bbb0d25972e?w=400&h=300&fit=crop",
           alt: "MilesWeb Indian hosting",
         }}
       />

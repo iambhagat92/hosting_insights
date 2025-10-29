@@ -55,7 +55,7 @@ export default function HostGatorReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=300&fit=crop",
+          src: "https://images.unsplash.com/photo-1558694528-1bbb0d25972e?w=400&h=300&fit=crop",
           alt: "HostGator budget hosting",
         }}
       />

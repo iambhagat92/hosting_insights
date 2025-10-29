@@ -53,7 +53,7 @@ export default function InterServerReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=400&h=300&fit=crop",
+          src: "https://images.unsplash.com/photo-1516321318423-f06f70504504?w=400&h=300&fit=crop",
           alt: "InterServer lifetime discount hosting",
         }}
       />

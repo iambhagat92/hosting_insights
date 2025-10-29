@@ -57,7 +57,7 @@ export default function A2HostingReview() {
           { id: "verdict", label: "Final Verdict" },
         ]}
         image={{
-          src: "https://images.unsplash.com/photo-1460925895917-adf4198f7238?w=400&h=300&fit=crop",
+          src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=300&fit=crop",
           alt: "A2 Hosting Turbo servers",
         }}
       />
