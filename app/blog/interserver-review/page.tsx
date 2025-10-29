@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/interserver-review",
     title: "InterServer Review 2025",
     description: "Lifetime price lock at $2.50/mo — full InterServer review.",
-    images: [{ url: "/images/interserver-toc.webp", width: 1200, height: 900, alt: "InterServer" }],
+    images: [{ url: "/og/interserver.png", width: 1200, height: 630, alt: "InterServer Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "InterServer Review 2025",
     description: "Is the lifetime price lock worth it? Read now.",
-    images: ["/images/interserver-toc.webp"],
+    images: ["/og/interserver.png"],
   },
 };
 
@@ -90,6 +91,9 @@ export default function InterServerReview() {
         </p>
         <p className="text-gray-700">
           What makes InterServer unique is their lifetime price lock guarantee - your introductory price never increases, even at renewal. This is rare in the hosting industry where renewal prices typically spike.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          Want more features out‑of‑the‑box? See <Link href="/blog/bluehost-review" className="text-blue-700 hover:underline">Bluehost</Link> or <Link href="/blog/hostgator-review" className="text-blue-700 hover:underline">HostGator</Link> for beginner‑friendly options.
         </p>
       </section>
 

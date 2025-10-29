@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/namecheap-review",
     title: "Namecheap Review 2025",
     description: "Cheapest intro pricing with free domain — full Namecheap review.",
-    images: [{ url: "/images/namecheap-toc.webp", width: 1200, height: 900, alt: "Namecheap" }],
+    images: [{ url: "/og/namecheap.png", width: 1200, height: 630, alt: "Namecheap Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Namecheap Review 2025",
     description: "Best budget hosting? See pricing, speed and support.",
-    images: ["/images/namecheap-toc.webp"],
+    images: ["/og/namecheap.png"],
   },
 };
 
@@ -107,6 +108,9 @@ export default function NamecheapReview() {
         </p>
         <p className="text-gray-700">
           The company focuses on value pricing and provides straightforward, no-frills hosting that's ideal for small projects, personal blogs, and beginners learning web hosting basics.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          For better support and performance, see <Link href="/blog/bluehost-review" className="text-blue-700 hover:underline">Bluehost</Link>. For the absolute cheapest alternative, compare with <Link href="/blog/hostgator-review" className="text-blue-700 hover:underline">HostGator</Link>.
         </p>
       </section>
 

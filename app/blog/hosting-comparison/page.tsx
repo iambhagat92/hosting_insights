@@ -5,6 +5,19 @@ export const metadata = {
   title: "Best Web Hosting 2025: Complete Comparison Guide | Best Hosting Review",
   description: "Compare top web hosting providers including Bluehost, SiteGround, A2 Hosting, HostGator, Hostinger, DreamHost, and InterServer. Find your perfect hosting solution.",
   keywords: "best web hosting 2025, web hosting comparison, Bluehost vs SiteGround, cheap web hosting",
+  openGraph: {
+    type: 'article',
+    url: '/blog/hosting-comparison',
+    title: 'Best Web Hosting 2025: Complete Comparison Guide',
+    description: 'Side-by-side breakdown of top hosting providers with pricing and features.',
+    images: [{ url: '/og/comparison.png', width: 1200, height: 630, alt: 'Hosting Comparison' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Best Web Hosting 2025: Complete Comparison',
+    description: 'Compare Bluehost, SiteGround, A2 Hosting, HostGator and more.',
+    images: ['/og/comparison.png'],
+  },
 };
 
 export default function BlogPage() {

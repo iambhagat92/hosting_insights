@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/hostgator-review",
     title: "HostGator Review 2025",
     description: "Cheap hosting with solid support — pricing and pros/cons.",
-    images: [{ url: "/images/hostgator-toc.webp", width: 1200, height: 900, alt: "HostGator" }],
+    images: [{ url: "/og/hostgator.png", width: 1200, height: 630, alt: "HostGator Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "HostGator Review 2025",
     description: "Is HostGator good in 2025? Read our unbiased review.",
-    images: ["/images/hostgator-toc.webp"],
+    images: ["/og/hostgator.png"],
   },
 };
 
@@ -107,6 +108,9 @@ export default function HostGatorReview() {
         </p>
         <p className="text-gray-700">
           HostGator offers shared hosting, cloud hosting, VPS, and dedicated server options. Their shared hosting plans are particularly popular among beginners due to the simple pricing structure and comprehensive feature set.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          If you need the absolute cheapest, try <Link href="/blog/namecheap-review" className="text-blue-700 hover:underline">Namecheap</Link>. Prefer better performance? Read <Link href="/blog/bluehost-review" className="text-blue-700 hover:underline">Bluehost</Link> or see our <Link href="/blog/hosting-comparison" className="text-blue-700 hover:underline">full comparison</Link>.
         </p>
       </section>
 

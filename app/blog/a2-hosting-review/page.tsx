@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/a2-hosting-review",
     title: "A2 Hosting Review 2025",
     description: "Turbo servers up to 3x faster — see pricing and real speed tests.",
-    images: [{ url: "/images/a2-hosting-toc.webp", width: 1200, height: 900, alt: "A2 Hosting" }],
+    images: [{ url: "/og/a2-hosting.png", width: 1200, height: 630, alt: "A2 Hosting Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "A2 Hosting Review 2025",
     description: "Best value for speed? Full A2 Hosting analysis.",
-    images: ["/images/a2-hosting-toc.webp"],
+    images: ["/og/a2-hosting.png"],
   },
 };
 
@@ -109,6 +110,9 @@ export default function A2HostingReview() {
         </p>
         <p className="text-gray-700">
           A2 Hosting offers shared hosting (with standard and Turbo options), WordPress hosting, VPS hosting, and dedicated servers. They're particularly popular with developers due to their HDD and SSD storage options, Git support, and SSH access across all plans.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          Want alternatives? See <Link href="/blog/siteground-review" className="text-blue-700 hover:underline">SiteGround</Link> for top‑tier speed or <Link href="/blog/hostgator-review" className="text-blue-700 hover:underline">HostGator</Link> for ultra‑low intro pricing.
         </p>
       </section>
 

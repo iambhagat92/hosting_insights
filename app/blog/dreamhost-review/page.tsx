@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/dreamhost-review",
     title: "DreamHost Review 2025",
     description: "97‑day guarantee and open‑source friendly — full DreamHost review.",
-    images: [{ url: "/images/dreamhost-toc.webp", width: 1200, height: 900, alt: "DreamHost" }],
+    images: [{ url: "/og/dreamhost.png", width: 1200, height: 630, alt: "DreamHost Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "DreamHost Review 2025",
     description: "Affordable hosting with generous refund window.",
-    images: ["/images/dreamhost-toc.webp"],
+    images: ["/og/dreamhost.png"],
   },
 };
 
@@ -85,6 +86,9 @@ export default function DreamHostReview() {
         <h2 className="text-3xl font-bold mb-4">What is DreamHost?</h2>
         <p className="text-gray-700 mb-4">
           DreamHost is an ICANN-accredited domain registrar and hosting provider founded in 1997. Known for supporting open-source projects and offering one of the longest money-back guarantees in the industry (97 days), DreamHost caters to developers, designers, and creative professionals.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          For fastest support and speed, compare with <Link href="/blog/siteground-review" className="text-blue-700 hover:underline">SiteGround</Link>, or check value‑focused <Link href="/blog/a2-hosting-review" className="text-blue-700 hover:underline">A2 Hosting</Link>.
         </p>
       </section>
 

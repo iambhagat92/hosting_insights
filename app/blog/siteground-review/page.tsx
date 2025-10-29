@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/siteground-review",
     title: "SiteGround Review 2025",
     description: "Is SiteGround worth the premium? We test speed, uptime and support.",
-    images: [{ url: "/images/siteground-toc.webp", width: 1200, height: 900, alt: "SiteGround" }],
+    images: [{ url: "/og/siteground.png", width: 1200, height: 630, alt: "SiteGround Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "SiteGround Review 2025",
     description: "Premium speed and 99.99% uptime — full SiteGround analysis.",
-    images: ["/images/siteground-toc.webp"],
+    images: ["/og/siteground.png"],
   },
 };
 
@@ -108,6 +109,9 @@ export default function SiteGroundReview() {
         </p>
         <p className="text-gray-700">
           SiteGround offers shared hosting, cloud hosting, WordPress hosting, and dedicated server options. All plans feature SSD storage, free SSL certificates, and automated daily backups—features that are often optional or paid extras at other hosts.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          On a tighter budget? Consider <Link href="/blog/bluehost-review" className="text-blue-700 hover:underline">Bluehost</Link> or the fast yet affordable <Link href="/blog/a2-hosting-review" className="text-blue-700 hover:underline">A2 Hosting</Link>. Compare all providers in our <Link href="/blog/hosting-comparison" className="text-blue-700 hover:underline">hosting comparison</Link>.
         </p>
       </section>
 

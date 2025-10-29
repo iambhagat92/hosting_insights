@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -36,13 +37,13 @@ export const metadata = {
     url: "/blog/milesweb-review",
     title: "MilesWeb Review 2025",
     description: "Budget Indian hosting with SSD speed — full review.",
-    images: [{ url: "/images/milesweb-toc.webp", width: 1200, height: 900, alt: "MilesWeb" }],
+    images: [{ url: "/og/milesweb.png", width: 1200, height: 630, alt: "MilesWeb Review" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "MilesWeb Review 2025",
     description: "Affordable India‑focused hosting — pros, cons, pricing.",
-    images: ["/images/milesweb-toc.webp"],
+    images: ["/og/milesweb.png"],
   },
 };
 
@@ -107,6 +108,9 @@ export default function MilesWebReview() {
         </p>
         <p className="text-gray-700">
           MilesWeb offers shared hosting, cloud hosting (VPS), and dedicated server options. All plans include SSD storage standard, which provides better performance than traditional HDD hosting.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          Also compare <Link href="/blog/namecheap-review" className="text-blue-700 hover:underline">Namecheap</Link> (cheapest with free domain) and <Link href="/blog/a2-hosting-review" className="text-blue-700 hover:underline">A2 Hosting</Link> (faster on budget).
         </p>
       </section>
 

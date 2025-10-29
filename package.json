@@ -7,7 +7,8 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "optimize:toc": "node scripts/optimize-images.mjs"
+    "optimize:toc": "node scripts/optimize-images.mjs",
+    "og:generate": "node scripts/generate-og.mjs"
   },
   "dependencies": {
     "next": "16.0.0",

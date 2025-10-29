@@ -3,6 +3,7 @@ import RelatedReviews from "@/components/RelatedReviews";
 import Infographic, { hostingInfographics } from "@/components/Infographic";
 import TableOfContents from "@/components/TableOfContents";
 import BreadcrumbJsonLd from "@/components/BreadcrumbJsonLd";
+import Link from "next/link";
 
 const reviewSchema = {
   "@context": "https://schema.org",
@@ -38,7 +39,7 @@ export const metadata = {
     description:
       "In-depth Bluehost review covering features, pros, cons, pricing, performance, and whether it's the best WordPress hosting.",
     images: [
-      { url: "/images/bluehost-toc.webp", width: 1200, height: 900, alt: "Bluehost overview" },
+      { url: "/og/bluehost.png", width: 1200, height: 630, alt: "Bluehost Review" },
     ],
   },
   twitter: {
@@ -46,7 +47,7 @@ export const metadata = {
     title: "Bluehost Review 2025",
     description:
       "Comprehensive Bluehost review — features, pricing, pros/cons, and performance benchmarks.",
-    images: ["/images/bluehost-toc.webp"],
+    images: ["/og/bluehost.png"],
   },
 };
 
@@ -112,6 +113,9 @@ export default function BlueHostReview() {
         </p>
         <p className="text-gray-700">
           Bluehost offers shared hosting, WordPress hosting, VPS hosting, and dedicated server options. However, their shared hosting and WordPress hosting plans are where they truly excel and what most customers choose.
+        </p>
+        <p className="text-sm text-gray-600 mt-4">
+          Looking for more speed or value? Check <Link href="/blog/siteground-review" className="text-blue-700 hover:underline">SiteGround</Link> for premium performance or <Link href="/blog/a2-hosting-review" className="text-blue-700 hover:underline">A2 Hosting</Link> for budget speed. See the <Link href="/blog/hosting-comparison" className="text-blue-700 hover:underline">full comparison</Link>.
         </p>
       </section>
 
